@@ -1,7 +1,13 @@
 import { combineReducers } from 'redux';
 
-const RootReducer = combineReducers({
 
+function SampleReducer(state = null, action) {
+    return state;
+}
+
+const RootReducer = combineReducers({
+    sample: SampleReducer,
+    
 })
 
 export default RootReducer;
